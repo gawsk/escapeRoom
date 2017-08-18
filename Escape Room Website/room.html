@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Some Clue About the Room</title>
+	<link rel="stylesheet" href="roomStyleSheet.css" type="text/css">
+	<script src="roomScript.js"></script>
+
+  </head>
+  
+  
+  <body>
+	<div id="myOutput">
+		<div class="display"><input type="text" readonly size="18" id="d"></div>
+	</div>
+	<div id ="buttons">
+		<button type="button" OnClick="appendNumber('1')">1</button>
+		<button type="button" onclick="appendNumber('2')">2</button>
+		<button type="button" onclick="appendNumber('3')">3</button>
+		<button type="button" onclick="appendNumber('4')">4</button>
+		<button type="button" onclick="appendNumber('5')">5</button>
+		<button type="button" onclick="appendNumber('6')">6</button>
+		<button type="button" onclick="appendNumber('7')">7</button>
+		<button type="button" onclick="appendNumber('8')">8</button>
+		<button type="button" onclick="appendNumber('9')">9</button>
+		<button type="button" onclick="appendNumber('0')">0</button>
+	</div>
+	
+	<div id="clearInput">
+		<button type="button" onclick="clearItAll()">CLEAR</button>
+		<button type="button" onclick="submitItAll()">SUBMIT</button>
+		
+	</div>
+	
+  </body>
+  
+  
+</html>
