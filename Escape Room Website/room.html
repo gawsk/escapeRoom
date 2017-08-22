@@ -3,33 +3,78 @@
   <head>
     <meta charset="UTF-8">
     <title>Some Clue About the Room</title>
-	<link rel="stylesheet" href="roomStyleSheet.css" type="text/css">
+	<!-- <link rel="stylesheet" href="roomStyleSheet.css" type="text/css"> -->
 	<script src="roomScript.js"></script>
 
   </head>
   
   
-  <body>
-	<div id="myOutput">
-		<div class="display"><input type="text" readonly size="18" id="d"></div>
-	</div>
-	<div id ="buttons">
-		<button type="button" OnClick="appendNumber('1')">1</button>
-		<button type="button" onclick="appendNumber('2')">2</button>
-		<button type="button" onclick="appendNumber('3')">3</button>
-		<button type="button" onclick="appendNumber('4')">4</button>
-		<button type="button" onclick="appendNumber('5')">5</button>
-		<button type="button" onclick="appendNumber('6')">6</button>
-		<button type="button" onclick="appendNumber('7')">7</button>
-		<button type="button" onclick="appendNumber('8')">8</button>
-		<button type="button" onclick="appendNumber('9')">9</button>
-		<button type="button" onclick="appendNumber('0')">0</button>
+  <body onLoad="return show('part1','part2');">
+	<div class="display"><input type="text" readonly size="18" id="d"></div>
+	<div id ="part1">
+		<div id ="buttons1">
+			<button type="button" OnClick="appendNumber('1')">1</button>
+			<button type="button" onclick="appendNumber('2')">2</button>
+			<button type="button" onclick="appendNumber('3')">3</button>
+			<button type="button" onclick="appendNumber('4')">4</button>
+			<button type="button" onclick="appendNumber('5')">5</button>
+			<button type="button" onclick="appendNumber('6')">6</button>
+			<button type="button" onclick="appendNumber('7')">7</button>
+			<button type="button" onclick="appendNumber('8')">8</button>
+			<button type="button" onclick="appendNumber('9')">9</button>
+			<button type="button" onclick="appendNumber('0')">0</button>
+		</div>
+		<div id="clearInput">
+			<button type="button" onclick="clearItAll()">CLEAR</button>
+			<button type="button" onclick="submitItAll()">SUBMIT</button>
+			
+		</div>
 	</div>
 	
-	<div id="clearInput">
-		<button type="button" onclick="clearItAll()">CLEAR</button>
-		<button type="button" onclick="submitItAll()">SUBMIT</button>
-		
+	<div id="part2">
+		<div id ="buttons2">
+			<button type="button" OnClick="appendNumber('A')">A</button>
+			<button type="button" onclick="appendNumber('B')">B</button>
+			<button type="button" onclick="appendNumber('C')">C</button>
+			<button type="button" onclick="appendNumber('D')">D</button>
+			<button type="button" onclick="appendNumber('E')">E</button>
+			<button type="button" onclick="appendNumber('F')">F</button>
+			<button type="button" onclick="appendNumber('G')">G</button>
+			<button type="button" onclick="appendNumber('H')">H</button>
+			<button type="button" onclick="appendNumber('I')">I</button>
+			<button type="button" onclick="appendNumber('J')">J</button>
+			<button type="button" onclick="appendNumber('K')">K</button>
+			<button type="button" onclick="appendNumber('L')">L</button>
+			<button type="button" onclick="appendNumber('M')">M</button>
+			<button type="button" onclick="appendNumber('N')">N</button>
+			<button type="button" onclick="appendNumber('O')">O</button>
+			<button type="button" onclick="appendNumber('P')">P</button>
+			<button type="button" onclick="appendNumber('Q')">Q</button>
+			<button type="button" onclick="appendNumber('R')">R</button>
+			<button type="button" onclick="appendNumber('S')">S</button>
+			<button type="button" onclick="appendNumber('T')">T</button>
+			<button type="button" onclick="appendNumber('U')">U</button>
+			<button type="button" onclick="appendNumber('V')">V</button>
+			<button type="button" onclick="appendNumber('W')">W</button>
+			<button type="button" onclick="appendNumber('X')">X</button>
+			<button type="button" onclick="appendNumber('Y')">Y</button>
+			<button type="button" onclick="appendNumber('Z')">Z</button>
+		</div>
+		<div/>
+		<div id="clearInput">
+			<button type="button" onclick="clearItAll()">CLEAR</button>
+			<button type="button" onclick="submitItAll()">SUBMIT</button>
+			
+		</div>
+		<div>
+			<h1>ACE OF SPADES IS T</h1>
+		</div>
+		<div id="part3" display="none">
+			<div>
+				<h1>YOU DID IT YO!!!!!!</h1>
+				<h1>CONGRATS</h1>
+			</div>
+		</div>
 	</div>
 	
   </body>
